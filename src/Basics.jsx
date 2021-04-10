@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './styles.css';
 
 export default function Basics() {
-	const [valSelect, setValSelect] = useState({ optionValue: 1, optionText: '' });
+	const [valSelect, setValSelect] = useState({ optionValue: '', optionText: '' });
 	const [valInput, setValInput] = useState('');
 	const [isChecked, setIsChecked] = useState({
 		check1: false,
@@ -39,15 +39,15 @@ export default function Basics() {
 			<form>
 				<fieldset>
 					<div className='select-container'>
-						<h2>Dropdown</h2>
+						<h2>Dropdown List</h2>
 						<select onChange={handleChangeSelect}>
+							<option value=''>Select one item...</option>
 							<option value='1'>First item</option>
 							<option value='2'>Second item</option>
 							<option value='3'>Third item</option>
 						</select>
-						<p>
-							Selected value = {valSelect.optionValue} Corresponding text = {valSelect.optionText}
-						</p>
+						<p>Selected value = {valSelect.optionValue}</p>
+						<p>Corresponding text = {valSelect.optionText}</p>
 					</div>
 					<input
 						onChange={handleChangeInput}
