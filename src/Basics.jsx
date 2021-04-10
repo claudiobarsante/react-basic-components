@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function TestSelect() {
+export default function Basics() {
 	const [valSelect, setValSelect] = useState();
 	const [valInput, setValInput] = useState('');
 	const [isChecked, setIsChecked] = useState({
