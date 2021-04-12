@@ -6,10 +6,6 @@
 	box-sizing: content-box;
 }
 
-.container {
+.landing-container {
 	display: flex;
-}
-
-.select-container {
-	margin: 20px 20px;
 }
